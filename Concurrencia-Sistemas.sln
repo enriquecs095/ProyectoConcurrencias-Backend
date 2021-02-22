@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concurrencia-Sistemas", "Concurrencia-Sistemas\Concurrencia-Sistemas.csproj", "{7FFC8A75-C80F-4D43-AF6B-B1BDE7A4EB64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMediaApp.Console", "..\..\..\Documents\Tareas\Concurrencia y Sistemas distribuidos\Ejercicio-Programacion-asincrona-master\SocialMediaApp.Console\SocialMediaApp.Console.csproj", "{1631BFA6-1D2A-4FE9-B0C2-8C7715ED750A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba1", "Prueba1\Prueba1.csproj", "{87FD70D9-B9D2-4581-92CE-45F42CCFEBB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelismExam1.Console", "..\..\..\Documents\Tareas\Concurrencia y Sistemas distribuidos\examen-1-master\ParallelismExam1.Console\ParallelismExam1.Console.csproj", "{6AEF0D5E-DF8D-483F-9E9C-10BCC7159950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend-Vuelos", "Backend-Vuelos\Backend-Vuelos.csproj", "{05393E74-0946-462E-9682-17C8FC29F3C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FFC8A75-C80F-4D43-AF6B-B1BDE7A4EB64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FFC8A75-C80F-4D43-AF6B-B1BDE7A4EB64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FFC8A75-C80F-4D43-AF6B-B1BDE7A4EB64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FFC8A75-C80F-4D43-AF6B-B1BDE7A4EB64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1631BFA6-1D2A-4FE9-B0C2-8C7715ED750A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1631BFA6-1D2A-4FE9-B0C2-8C7715ED750A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1631BFA6-1D2A-4FE9-B0C2-8C7715ED750A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1631BFA6-1D2A-4FE9-B0C2-8C7715ED750A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87FD70D9-B9D2-4581-92CE-45F42CCFEBB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87FD70D9-B9D2-4581-92CE-45F42CCFEBB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87FD70D9-B9D2-4581-92CE-45F42CCFEBB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87FD70D9-B9D2-4581-92CE-45F42CCFEBB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AEF0D5E-DF8D-483F-9E9C-10BCC7159950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AEF0D5E-DF8D-483F-9E9C-10BCC7159950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AEF0D5E-DF8D-483F-9E9C-10BCC7159950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AEF0D5E-DF8D-483F-9E9C-10BCC7159950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05393E74-0946-462E-9682-17C8FC29F3C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05393E74-0946-462E-9682-17C8FC29F3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05393E74-0946-462E-9682-17C8FC29F3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05393E74-0946-462E-9682-17C8FC29F3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEA1297A-EC34-4CD3-964F-5CAE528483FD}
+	EndGlobalSection
+EndGlobal

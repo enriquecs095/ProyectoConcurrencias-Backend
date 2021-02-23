@@ -1,8 +1,15 @@
 # ProyectoConcurrencias-Backend
 
+#Diagrama de la base de datos.
+
+![Screenshot](Diagrama.PNG)
+
+
+
 
 -EndPoints-
-|     URL              |  Param |                       Retorno                                      |  Descripción                                                  | 
+
+     URL              |  Param |                       Retorno                                      |  Descripción                                                  | 
 
 | Vuelos/getAll | None | [
   {

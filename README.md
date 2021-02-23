@@ -105,3 +105,24 @@ Vuelos/getByDate/date | Vuelos/getByDate/"9/1/2015 09:20 AM" | [
     "fecha": "2021-02-23T04:39:38.207Z"
   }
 ] | retorna todos los vuelos segun la fecha recibida por parametro
+
+Vuelos/getByRange/700/900 | Vuelos/getByRange/Minimum/Maximun |    {
+        "id": "6029b87ab1b88c1ff0992d92",
+        "disponibilidad": 80,
+        "lugar_Origen": {
+            "id": "60300cf21a60327fb57339e6",
+            "pais": "Guatemala",
+            "ciudad": "Antigua Guatemala"
+        },
+        "lugar_Destino": {
+            "id": "60300cf21a60327fb57339e6",
+            "pais": "Honduras",
+            "ciudad": "San Pedro Sula"
+        },
+        "clase": 0,
+        "precio": 800,
+        "aerolinea": "AA",
+        "descripcion": "La mejor",
+        "fecha": "2015-09-01T15:20:00Z"
+    }
+| retorna el rango de precios de los vuelos

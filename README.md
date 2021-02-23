@@ -1,15 +1,15 @@
 # ProyectoConcurrencias-Backend
 
-#Diagrama de la base de datos.
+Diagrama de la base de datos.
 
 ![Screenshot](Diagrama.PNG)
 
 
 
 
--EndPoints-
+EndPoints
 
-     URL              |  Param |                       Retorno                                      |  Descripción                                                  | 
+URL              |  Param  |                       Retorno                                      |  Descripción                                                  | 
 
 | Vuelos/getAll | None | [
   {
@@ -34,7 +34,7 @@
 ] | Retorna Todos los vuelos disponibles que existan
                                       
 
-Vuelos/getByOrigin | {
+Vuelos/getByOrigin | none |{
   "pais": "string",
   "ciudad": "string"
 } | [
@@ -59,7 +59,7 @@ Vuelos/getByOrigin | {
   }
 ] | Retorna los vuelos segun el origen                       
 
-Vuelos/getByDestination| {
+Vuelos/getByDestination| none | {
   "pais": "string",
   "ciudad": "string"
 } | [

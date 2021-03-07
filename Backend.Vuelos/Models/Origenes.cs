@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Backend_Vuelos.Models
 {
-    public class Origenes_Destino
+    public class Origenes
     {
 
         [BsonId]

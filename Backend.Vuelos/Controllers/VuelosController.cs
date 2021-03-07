@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Backend_Vuelos.Models;
 using Backend_Vuelos.Repositories;
 using Backend.Vuelos.Repositories;
+using Backend.Vuelos.Models;
 
 namespace Backend_Vuelos.Controllers
 {
@@ -14,14 +15,14 @@ namespace Backend_Vuelos.Controllers
     public class VuelosController : Controller
     {
         private readonly VuelosRepositories _vuelos;
-        private readonly Origenes_Destino_Repositories _origenes_destino;
+        private readonly OrigenesRepositories _origenes;
 
 
 
-        public VuelosController(VuelosRepositories vuelos, Origenes_Destino_Repositories origenes_destino)
+        public VuelosController(VuelosRepositories vuelos, OrigenesRepositories origenes)
         {
             _vuelos = vuelos;
-            _origenes_destino = origenes_destino;
+            _origenes = origenes;
         }
 
         [HttpGet]//obtiene todos los vuelos disponibles
@@ -30,17 +31,10 @@ namespace Backend_Vuelos.Controllers
 
 
         [HttpPost("getByOrigin")]
-        public ActionResult<List<Vuelo>> getByOrigin([FromBody] Origenes_Destino origin) {
-
-            return _origenes_destino.getVuelosByOrigin(origin);
-
+        public ActionResult<List<Vuelo>> getByOrigin([FromBody] Origenes origin) {
+            return _origenes.getVuelosByOrigin(origin);
         }
-
-        [HttpPost("getByDestination")]
-        public ActionResult<List<Vuelo>> getByDestination([FromBody] Origenes_Destino origin) {
-
-            return _origenes_destino.getVuelosByDestination(origin);
-        }
+        
 
         [HttpGet("getByDate/date")]
         public ActionResult<List<Vuelo>> getByDate(string date) =>

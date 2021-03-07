@@ -14,8 +14,8 @@ namespace Backend_Vuelos.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
         public int Disponibilidad { get; set; }
-        public Origenes_Destino Lugar_Origen { get; set; }
-        public Origenes_Destino Lugar_Destino { get; set; }
+        public Origenes Lugar_Origen { get; set; }
+        //public Origenes_Destino Lugar_Destino { get; set; }
         public int Clase { get; set; }
         public double Precio { get; set; }  
         public string Aerolinea { get; set; }

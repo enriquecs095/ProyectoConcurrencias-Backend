@@ -74,3 +74,4 @@ C:\Users\enrik\Documents\GitHub\ProyectoConcurrencias-Backend\Backend.Vuelos\obj
 C:\Users\enrik\Documents\GitHub\ProyectoConcurrencias-Backend\Backend.Vuelos\obj\Debug\net5.0\Backend.Vuelos.RazorTargetAssemblyInfo.cache
 C:\Users\enrik\Documents\GitHub\ProyectoConcurrencias-Backend\Backend.Vuelos\obj\Debug\net5.0\Backend.Vuelos.csproj.CopyComplete
 C:\Users\enrik\Documents\GitHub\ProyectoConcurrencias-Backend\Backend.Vuelos\obj\Debug\net5.0\Backend.Vuelos.genruntimeconfig.cache
+C:\Users\enrik\Documents\GitHub\ProyectoConcurrencias-Backend\Backend.Vuelos\bin\Debug\net5.0\Newtonsoft.Json.dll

@@ -28,15 +28,12 @@ namespace Backend_Vuelos {
 
             //Configurar Base de datos y conexion
             services.Configure<ConcurrenciaDatabaseSettings>(Configuration.GetSection(nameof(ConcurrenciaDatabaseSettings)));
-
-
             services.AddSingleton<IConcurrenciaDatabaseSettings>(sp =>
-                sp.GetRequiredService<IOptions<ConcurrenciaDatabaseSettings>>().Value);
-
-            services.AddSingleton<Origenes_Destino_Repositories>();
+            sp.GetRequiredService<IOptions<ConcurrenciaDatabaseSettings>>().Value);
+            services.AddHttpClient<IDestinosRepositories, DestinosRepositories>(configuration => 
+                            configuration.BaseAddress = new Uri("https://localhost:44369"));//esto va para los del grupo 1
+            services.AddSingleton<OrigenesRepositories>();
             services.AddSingleton<VuelosRepositories>();
-
-
             services.AddControllers();
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Backend_Vuelos", Version = "v1" });

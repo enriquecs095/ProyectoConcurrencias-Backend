@@ -1,49 +1,49 @@
-﻿using Backend_Vuelos.Models;
+﻿using Backend.Vuelos.Models;
+using Backend_Vuelos.Models;
 using MongoDB.Driver;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace Backend.Vuelos.Repositories
 {
-    public class Origenes_Destino_Repositories
+    public class OrigenesRepositories: IOrigenesRepositories
     {
-        private readonly IMongoCollection<Origenes_Destino> _origenes;
+        private readonly IMongoCollection<Origenes> _origenes;
         private readonly IMongoCollection<Vuelo> _vuelos;
+        private readonly HttpClient _httpClient;
 
         // private readonly IMongoCollection<Origenes_Destino> _origenes;
 
-        public Origenes_Destino_Repositories(IConcurrenciaDatabaseSettings settings)
+        public OrigenesRepositories(IConcurrenciaDatabaseSettings settings, HttpClient httpClient)
         {
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
-            _origenes = database.GetCollection<Origenes_Destino>("Origenes_Destino");
+            _origenes = database.GetCollection<Origenes>("Origenes_Destino");
             _vuelos = database.GetCollection<Vuelo>("Vuelos");
+            this._httpClient = httpClient;
         }
 
-
-        public List<Vuelo> getVuelosByOrigin(Origenes_Destino origin)
+   
+        public List<Vuelo> getVuelosByOrigin(Origenes origin)
         {
             var resultado = _vuelos.Find(x => x.Lugar_Origen.Ciudad == origin.Ciudad && x.Lugar_Origen.Pais == origin.Pais).ToList();
             return resultado;
         }
 
-        public List<Vuelo> getVuelosByDestination(Origenes_Destino origin)
-        {
-            var resultado = _vuelos.Find(x => x.Lugar_Destino.Ciudad == origin.Ciudad && x.Lugar_Destino.Pais == origin.Pais).ToList();
-            return resultado;
-        }
-
-        public List<Origenes_Destino> getOrigen_Destino() =>
+        public List<Origenes> getOrigenes() =>
             _origenes.Find(book => true).ToList();
 
-        public Origenes_Destino Create(Origenes_Destino origen)
-        {
 
+        public Origenes Create(Origenes origen)
+        {
             _origenes.InsertOne(origen);
             return origen;
         }
 
+  
     }
 }

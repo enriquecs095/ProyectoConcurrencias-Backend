@@ -1,5 +1,6 @@
+using Backend.Vuelos.Repositories;
 using Backend_Vuelos.Models;
-using Backend_Vuelos.Services;
+using Backend_Vuelos.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,7 +33,9 @@ namespace Backend_Vuelos {
             services.AddSingleton<IConcurrenciaDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<ConcurrenciaDatabaseSettings>>().Value);
 
-            services.AddSingleton<ConcurrenciaServices>();
+            services.AddSingleton<Origenes_Destino_Repositories>();
+            services.AddSingleton<VuelosRepositories>();
+
 
             services.AddControllers();
             services.AddSwaggerGen(c => {

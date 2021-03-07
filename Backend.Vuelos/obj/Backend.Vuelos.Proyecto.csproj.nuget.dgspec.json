@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\enrik\\Documents\\GitHub\\ProyectoConcurrencias-Backend\\Backend.Vuelos\\Backend.Vuelos.csproj": {}
+    "C:\\Users\\enrik\\Documents\\GitHub\\ProyectoConcurrencias-Backend\\Backend.Vuelos\\Backend.Vuelos.Proyecto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\enrik\\Documents\\GitHub\\ProyectoConcurrencias-Backend\\Backend.Vuelos\\Backend.Vuelos.csproj": {
+    "C:\\Users\\enrik\\Documents\\GitHub\\ProyectoConcurrencias-Backend\\Backend.Vuelos\\Backend.Vuelos.Proyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\enrik\\Documents\\GitHub\\ProyectoConcurrencias-Backend\\Backend.Vuelos\\Backend.Vuelos.csproj",
-        "projectName": "Backend.Vuelos",
-        "projectPath": "C:\\Users\\enrik\\Documents\\GitHub\\ProyectoConcurrencias-Backend\\Backend.Vuelos\\Backend.Vuelos.csproj",
+        "projectUniqueName": "C:\\Users\\enrik\\Documents\\GitHub\\ProyectoConcurrencias-Backend\\Backend.Vuelos\\Backend.Vuelos.Proyecto.csproj",
+        "projectName": "Backend.Vuelos.Proyecto",
+        "projectPath": "C:\\Users\\enrik\\Documents\\GitHub\\ProyectoConcurrencias-Backend\\Backend.Vuelos\\Backend.Vuelos.Proyecto.csproj",
         "packagesPath": "C:\\Users\\enrik\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\enrik\\Documents\\GitHub\\ProyectoConcurrencias-Backend\\Backend.Vuelos\\obj\\",
         "projectStyle": "PackageReference",

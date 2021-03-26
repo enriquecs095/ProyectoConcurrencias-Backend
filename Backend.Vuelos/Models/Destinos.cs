@@ -9,7 +9,7 @@ namespace Backend.Vuelos.Models
     {
         public string Name { get; set; }
         public int Id { get; set; }
-        public Cities City;
+        public Cities[] City;
 
     }
 }

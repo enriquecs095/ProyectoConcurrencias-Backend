@@ -36,8 +36,8 @@ namespace Backend_Vuelos.Controllers
         }
         
 
-        [HttpGet("getByDate/date")]
-        public ActionResult<List<Vuelo>> getByDate(string date) =>
+        [HttpGet("getByDate")]
+        public ActionResult<List<Vuelo>> getByDate([FromQuery] string date) =>
             _vuelos.getVuelosByDate(date);
 
 
